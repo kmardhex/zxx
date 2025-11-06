@@ -75,7 +75,7 @@ mkdir -p "$INSTALL_DIR"
 
 # download dengan pengecekan
 if wget --timeout=30 -q -O "$ZIP_PATH" "$ZIP_URL"; then
-    printf "${GREEN}Unduhan selesai: %s${RESET}\n\n" "$ZIP_PATH"
+    printf "${GREEN}Unduhan selesai..!\n\n" "$ZIP_PATH"
 else
     printf "${RED}Gagal mengunduh file ZIP dari: %s${RESET}\n" "$ZIP_URL"
     exit 1
@@ -121,7 +121,7 @@ done
 if [ "$MISSING" = false ]; then
     printf "\n${GREEN}==============================================\n"
     printf "       Instalasi Berhasil Diselesaikan!\n"
-    printf "   Semua file yang diharapkan ada di %s\n" "$INSTALL_DIR"
+    printf "   Semua file yang diharapkan ada di system!."
     printf "==============================================${RESET}\n\n"
 else
     printf "\n${RED}Beberapa file tidak ditemukan setelah ekstraksi. Periksa konten ZIP atau URL.${RESET}\n"
