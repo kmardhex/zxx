@@ -43,22 +43,21 @@ if [ "${NO_MOTD_ANIM:-0}" != "1" ]; then
   spinner_short "$ANIM_SECS"
   printf "\n"
   printf "${G}"
-  type_write_fast "  ███  INTRUDER LOG  ███" 0.006
+  type_write_fast "  ███  Welcome To Cyber Indonesia ███" 0.006
   printf "${RESET}\n"
 else
   clear
-  printf "${G}===[ INTRUDER LOG ]===${RESET}\n"
+  printf "${G}===[ DIAM BUKAN BERARTI KALAH tapi SEDANG MENGAMATI ]===${RESET}\n"
 fi
 
 # --- Static info ---
 echo -e "${DG}┌────────────────────────────────────────────────────┐${RESET}"
-echo -e "${DG}│ ${BOLD}${G}Access:${RESET}${GRAY} Granted to $(whoami)@$(hostname)${RESET} ${DG}│${RESET}"
 echo -e "${DG}│ ${BOLD}${G}Session:${RESET}${GRAY} $(date +'%Y-%m-%d %H:%M:%S')${RESET} ${DG}│${RESET}"
 echo -e "${DG}└────────────────────────────────────────────────────┘${RESET}"
 echo
 
-echo -e "${G}[ OK ]${RESET} Kernel: $(uname -srmo)"
-echo -e "${G}[ OK ]${RESET} Uptime: $(uptime -p 2>/dev/null || echo 'n/a')"
+echo -e "${RESET} Kernel: $(uname -srmo)"
+echo -e "${RESET} Uptime: $(uptime -p 2>/dev/null || echo 'n/a')"
 
 # IP (if available)
 if command -v ip >/dev/null 2>&1; then

@@ -129,24 +129,24 @@ fi
 
 # =====================================================
 # PILIH TAMPILAN MOTD
-printf "${CYAN}Pilih tampilan MOTD untuk Termux:${RESET}\n"
-printf "${YELLOW}[1]${RESET} Hacker (dengan animasi boot)\n"
-printf "${YELLOW}[2]${RESET} Hacker (tanpa animasi)\n\n"
+printf "${CYAN}Pilih Menu Script Dor Utama :${RESET}\n"
+printf "${YELLOW}[1]${RESET} Script Dor Manual By mDx\n"
+printf "${YELLOW}[2]${RESET} Script Dor Auto Update By mDx\n\n"
 read -r -p "Masukkan pilihan (1/2): " choice
 
 case "$choice" in
     1) MOTD_URL="$MOTD_HACKER_URL" ;;
     2) MOTD_URL="$MOTD_STATIC_URL" ;;
     *)
-        printf "${RED}Pilihan tidak valid. Menggunakan default: hacker animasi.${RESET}\n"
+        printf "${RED}Pilihan tidak valid. Menggunakan default: Dor default..🙏${RESET}\n"
         MOTD_URL="$MOTD_HACKER_URL"
         ;;
 esac
 
 # =====================================================
 # DOWNLOAD & PASANG MOTD
-printf "\n${CYAN}Mengunduh dan menginstal MOTD...${RESET}\n"
-progress_bar "Menerapkan MOTD tampilan pilihan"
+printf "\n${CYAN}Mengunduh dan menginstal File Utama...${RESET}\n"
+progress_bar "Menerapkan Script Dor By mDX"
 
 if wget --timeout=30 -q -O "$MOTD_PATH" "$MOTD_URL"; then
     chmod +x "$MOTD_PATH" || true
@@ -164,9 +164,9 @@ if wget --timeout=30 -q -O "$MOTD_PATH" "$MOTD_URL"; then
         fi
     done
 
-    printf "${GREEN}MOTD berhasil dipasang dan diaktifkan!${RESET}\n\n"
+    printf "${GREEN}Script Dor berhasil dipasang dan diaktifkan!${RESET}\n\n"
 else
-    printf "${RED}Gagal mengunduh MOTD dari %s${RESET}\n" "$MOTD_URL"
+    printf "${RED}Gagal mengunduh Script dari %s${RESET}\n" "$MOTD_URL"
 fi
 
 # =====================================================
@@ -188,7 +188,7 @@ sleep 0.4
 # PESAN PENUTUP
 printf "\n${GREEN}==============================================\n"
 printf " Terimakasih telah menggunakan installer\n"
-printf "      dari ${CYAN}mDx_Dev${GREEN} + MOTD otomatis!\n"
+printf "      dari ${CYAN}mDx_Dev${GREEN} + Jangan Bar-Bar\n"
 printf " Ketik ${YELLOW}menu${GREEN} untuk memulai!\n"
 printf "==============================================${RESET}\n\n"
 
