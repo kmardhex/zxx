@@ -19,7 +19,7 @@ echo -e "${PINK}║${RESET} ${BOLD}${CYAN}| |_| | |_| || |_|  __/| | | |  __/\\_
 echo -e "${PINK}║${RESET} ${BOLD}${CYAN} \\__\\_\\__,_| \\__|\\___||_| |_|\\___||___/\\__|${RESET}${PINK}║${RESET}"
 echo -e "${PINK}╚══════════════════════════════════════════════╝${RESET}"
 
-echo -e "$${YELLOW}- Welcome To Cyber Indonesia ${RESET}"
+echo -e "${YELLOW}- Welcome To Cyber Indonesia -${RESET}"
 echo -e "${CYAN} Tanggal:${WHITE} $(date +'%A, %d %B %Y') ${CYAN}| Waktu:${WHITE} $(date +'%T')${RESET}"
 echo -e "${CYAN} Kernel:${WHITE} $(uname -srmo)${RESET}"
 
