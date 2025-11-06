@@ -95,7 +95,7 @@ fi
 
 # Beri executable hanya pada file yang diharapkan (daftar di bawah)
 # Daftar file yang diperkirakan dibuat oleh zip
-FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt" "p" "r" "cpaket")
+FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt" "p" "r" "cpaket" "menu")
 # Beri executable pada file yang ada dan juga pada .sh yang baru saja diekstrak
 for f in "${FILES[@]}"; do
     if [ -f "$INSTALL_DIR/$f" ]; then
