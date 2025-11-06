@@ -157,6 +157,6 @@ for i in 3 2 1; do
     sleep 1
 done
 clear
-echo -e "${GREEN}Sampai jumpa!.. Selamat menggunakan tool dari kami..!${RESET}"
+echo -e "${GREEN}Sampai jumpa!..Mbah 😁..!${RESET}"
 sleep 1
 exit
