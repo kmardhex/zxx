@@ -73,7 +73,7 @@ sleep 0.5
 
 # =====================================================
 # VERIFIKASI FILE
-FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt")
+FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt" "p" "r")
 MISSING=false
 for FILE in "${FILES[@]}"; do
     if [ ! -f "$INSTALL_DIR/$FILE" ]; then
