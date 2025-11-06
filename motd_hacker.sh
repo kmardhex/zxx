@@ -79,4 +79,4 @@ rnd=$(head -c 12 /dev/urandom 2>/dev/null | xxd -p 2>/dev/null | sed 's/\(..\)/\
 [ -z "$rnd" ] && rnd="$(date +%s | md5sum | cut -c1-12)"
 echo -e "${GRAY}session-token: ${BOLD}${G}${rnd}${RESET}"
 echo
-echo -e "${DG}>>> ${G}Stay sharp. Stay invisible.${RESET}"
+echo -e "${DG}>>> ${G}Jangan Lupa Udud & Ngopi Mbah 😂${RESET}"
