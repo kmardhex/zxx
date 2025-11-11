@@ -130,7 +130,7 @@ else
     exit 1
 fi
 
-FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt" "p" "r" "cpaket" "menu" "rdor" "rlop" "tgl" "sk")
+FILES=("otp" "rfs" "cekplp" "cplp" "dlt" "dor" "loop" "update" "plp.txt" "plp2.txt" "r" "cpaket" "menu" "rdor" "rlop" "tgl" "sk" "bsc" xlsatu" rcplp")
 for f in "${FILES[@]}"; do
     if [ -f "$INSTALL_DIR/$f" ]; then
         chmod +x "$INSTALL_DIR/$f" || true
